@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="számítás.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>A téglalap</h1>
+            <h2>Kiindulási adatok:</h2>
+            <p>
+            <label for="a">'a' oldal hossza:</label>
+            <span class="adat"><input type="number" id="a"> cm</span>
+            </p>
+            <p>
+            <label for="b">'b' oldal hossza:</label>
+            <span class="adat"><input type="number" id="b"> cm</span>
+            </p>
+            <input type="button" value="Számol" onclick="szamol()">
+
+            <hr>
+
+            <h2>Eredmények:</h2>
+            <p>
+            <label for="k">Kerület:</label>
+            <span class="adat"><input type="number" id="k" readonly> cm</span>
+            </p>
+            <p>
+            <label for="t">Terület:</label>
+            <span class="adat"><input type="number" id="t" readonly> cm<sup>2</sup></span>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

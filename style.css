@@ -1,0 +1,35 @@
+main{
+    background-color: rgb(238, 238, 256);
+    border: 1px solid rgb(143, 143, 207);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    border: 1px solid rgb(143, 143, 207);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px;
+    color: #400080;
+}
+p{
+    margin-left: 150px;
+    position: relative;
+}
+input{
+    margin-left: 20px;
+}
+[type="button"]{
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    font-size: 130%;
+}  
+.adat input{
+    width: 100px;
+    text-align: right;
+} 
