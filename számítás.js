@@ -32,9 +32,9 @@ function haromszog_szamol(){
     let c = parseInt(document.getElementById('h_c').value);
     let k = a + b + c;
     let s = k / 2;
-    let t = Math.round(MATH.sqrt((s* (s -a) * (s -b) * (s -c))));
-    document.getElementById('k_haromszog').value = a + b + c;
-    document.getElementById('t_haromszog').value = a*b 
+    let t = Math.round(Math.sqrt((s* (s -a) * (s -b) * (s -c))));
+    document.getElementById('k_haromszog').value = k;
+    document.getElementById('t_haromszog').value = t;
 }
 
 function valt(mire){
