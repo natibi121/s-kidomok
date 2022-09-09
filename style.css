@@ -33,7 +33,7 @@ h2{
     width: 100px;
     text-align: right;
 } 
-#kor{
+#kor, #haromszog{
     display: none;
 }
 .adat{
@@ -43,4 +43,10 @@ h2{
 nav{
     background-color: #400080;
     color: white;
+    margin-bottom: 20px;
+}
+nav.item{
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
 }

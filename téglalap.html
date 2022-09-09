@@ -12,12 +12,12 @@
     <nav>
         <span class="nav-item" onclick="valt('teglalap')">Téglalap</span>
         <span class="nav-item" onclick="valt('kor')">Kör</span>
-        <span class="nav-item" onclick="valt('hszog')">Háromszög</span>
+        <span class="nav-item" onclick="valt('haromszog')">Háromszög</span>
         <span class="nav-item" onclick="valt('negyzet')">Négyzet</span>
         <span class="nav-item" onclick="valt('hatszog')">Hatszog</span>
     </nav>
     <main>
-        <form>
+        <form id="teglalap">
             <h1>A téglalap</h1>
             <h2>Kiindulási adatok:</h2>
             <p>
@@ -34,12 +34,32 @@
 
             <h2>Eredmények:</h2>
             <p>
-            <label for="k">Kerület:</label>
-            <span class="adat"><input type="number" id="k" readonly> cm</span>
+            <label for="k_tegla">Kerület:</label>
+            <span class="adat"><input type="number" id="k_tegla" readonly> cm</span>
             </p>
             <p>
-            <label for="t">Terület:</label>
-            <span class="adat"><input type="number" id="t" readonly> cm<sup>2</sup></span>
+            <label for="t_tegla">Terület:</label>
+            <span class="adat"><input type="number" id="t_tegla" readonly> cm<sup>2</sup></span>
+            </p>
+
+        </form>
+        <form id="kor">
+            <h1>A kör</h1>
+            <h2>Adatok:</h2>
+            <p>
+            <label for="r">A kör sugara:</label>
+            <span class="adat"><input type="number" id="r" onfocus="torol()" onblur="k_szamol('r')"> cm</span>
+            </p>
+            <p>
+            <label for="k_kor">A kör kerülete:</label>
+            <span class="adat"><input type="number" id="k_kor" onfocus="torol()" onblur="k_szamol('r')"> cm</span>
+            </p>
+            <p>
+            <label for="t_kor">A kör területe:</label>
+            <span class="adat"><input type="number" id="t_kor" onfocus="torol()" onblur="k_szamol('r')"> cm<sup>2</sup></span>
+            </p>
+            <p>
+            <input type="button" value="Számol">
             </p>
         </form>
     </main>
