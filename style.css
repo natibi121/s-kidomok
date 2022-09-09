@@ -33,7 +33,7 @@ h2{
     width: 100px;
     text-align: right;
 } 
-#kor, #haromszog{
+form:not(#teglalap){
     display: none;
 }
 .adat{

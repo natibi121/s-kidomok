@@ -62,6 +62,37 @@
             <input type="button" value="Számol">
             </p>
         </form>
+        <form id="haromszog">
+            <h1>A háromszög</h1>
+            <h2>Adatok:</h2>
+            <p>
+            <label for="h_a">A kör sugara:</label>
+            <span class="adat"><input type="number" id="h_a"> cm</span>
+            </p>
+            <p>
+            <label for="h_b">A kör kerülete:</label>
+            <span class="adat"><input type="number" id="h_b"> cm</span>
+            </p>
+            <p>
+            <label for="h_c">A kör területe:</label>
+            <span class="adat"><input type="number" id="h_c"> cm<sup>2</sup></span>
+            </p>
+            <p>
+            <input type="button" value="Számol" onclick="haromszog_szamol()">
+
+            <hr>
+
+            <h2>Eredmények:</h2>
+            <p>
+            <label for="k_haromszog">Kerület:</label>
+            <span class="adat"><input type="number" id="k_haromszog" readonly> cm</span>
+            </p>
+            <p>
+            <label for="t_haromszog">Terület:</label>
+            <span class="adat"><input type="number" id="t_haromszog" readonly> cm<sup>2</sup></span>
+            </p>
+            </p>
+        </form>
     </main>
 </body>
 </html>
