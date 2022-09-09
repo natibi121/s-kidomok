@@ -36,7 +36,13 @@ function haromszog_szamol(){
     document.getElementById('k_haromszog').value = k;
     document.getElementById('t_haromszog').value = t;
 }
-
+function negyzet_szamol(){
+    let a = parseInt(document.getElementById('n_a').value);
+    let k = 4 * a;
+    let t = a * a;
+    document.getElementById('k_negyzet').value = k;
+    document.getElementById('t_negyzet').value = t;
+}
 function valt(mire){
     document.getElementById('teglalap').style.display = "none";
     document.getElementById('kor').style.display = "none";
