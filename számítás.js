@@ -43,6 +43,12 @@ function negyzet_szamol(){
     document.getElementById('k_negyzet').value = k;
     document.getElementById('t_negyzet').value = t;
 }
+function hatszog_szamol() {
+    let a = parseInt(document.getElementById('hatszog_a').value);
+    document.getElementById('k_hatszog').value = 6 * a;
+    document.getElementById('t_hatszog').value = (3 / 2) * (a * a) * Math.cbrt(3);
+}
+
 function valt(mire){
     document.getElementById('teglalap').style.display = "none";
     document.getElementById('kor').style.display = "none";
