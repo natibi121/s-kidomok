@@ -1,6 +1,3 @@
-/*Terület = a * b
-Kerület = 2*(a+b)*/
-
 function szamol(){
     let a = parseInt(document.getElementById('a').value);
     let b = parseInt(document.getElementById('b').value);
@@ -44,9 +41,11 @@ function negyzet_szamol(){
     document.getElementById('t_negyzet').value = t;
 }
 function hatszog_szamol() {
-    let a = parseInt(document.getElementById('hatszog_a').value);
-    document.getElementById('k_hatszog').value = 6 * a;
-    document.getElementById('t_hatszog').value = (3 / 2) * (a * a) * Math.cbrt(3);
+    let a = parseInt(document.getElementById('hat_a').value);
+    let k = 6 * a;
+    let t = Math.round((3 / 2) * (a * a) * Math.cbrt(3));
+    document.getElementById('k_hatszog').value = k;
+    document.getElementById('t_hatszog').value = t;
 }
 
 function valt(mire){
