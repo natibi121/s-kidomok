@@ -43,6 +43,7 @@ function negyzet_szamol(){
     document.getElementById('k_negyzet').value = k;
     document.getElementById('t_negyzet').value = t;
 }
+
 function valt(mire){
     document.getElementById('teglalap').style.display = "none";
     document.getElementById('kor').style.display = "none";
